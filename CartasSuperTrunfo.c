@@ -11,9 +11,7 @@ int main() {
     int ptr; /*pontos turisticos*/
     
     printf("𖨠 Bem Vindo ao Super Trunfo - Card City 𖨠\n\n ✢ Insira as informações solicitadas. ✢\n\n");
-
-    printf("Digite a Letra do Estado, de ( A a Z ): ");
-    scanf("%s", &estado);
+    printf("olá");
 
     printf("Digite o codigo da Cidade. Ex: D001: ");
     scanf("%s", &codigo);
@@ -34,8 +32,6 @@ int main() {
     scanf("%d", &ptr);
 
     printf("✦✦Carta Cadastrada com Sucesso!!✦✦\n\n ┌┌Informações da Carta:┐┐ \n\n");
-
-    printf("Estado: %s\n", estado);
 
     printf("Código: %s\n", codigo);
 
