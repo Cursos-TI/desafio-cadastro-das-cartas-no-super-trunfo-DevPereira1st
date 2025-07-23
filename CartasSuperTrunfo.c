@@ -2,25 +2,51 @@
 
 int main() {
 
-    // Distrito Federal - Brasil
-    char estado = 'D';
-    char codigo[4] = 'D001';
-    char cidade[20] = 'Distrito Federal';
-    int populacao = 298000000;
-    float area = 5779784;
-    float pib = 11600000000;
-    int ptr = 15; /*pontos turisticos*/
-
-    //Roraima - Brasil
-    char estado = 'R';
-    char codigo[4] = 'R001';
-    char cidade[20] = 'Roraima';
-    int populacao = 636707;
-    float area = 223505385;
-    float pib = 2110000000;
-    int ptr = 10; /*pontos turisticos*/
+    char estado;
+    char codigo[4];
+    char cidade[20];
+    int populacao;
+    float area;
+    float pib;
+    int ptr; /*pontos turisticos*/
     
-    // Cadastro das Cartas:
+    printf("░ Bem Vindo ao Super Trunfo - Card City░\n ❙❙ Insira as informações solicitadas. ❙❙\n");
+    printf("Digite a Letra do Estado, de ( A a H ). Ex: D:\n");
+    scanf("%s", &estado);
+
+    printf("Digite o codigo da Cidade. Ex: D001:\n");
+    scanf("%s", &codigo);
+
+    printf("Digite o nome da Cidade. Ex: Distrito Federal:\n");
+    scanf("%s", &cidade);
+
+    printf("Digite o total de moradores na cidade:\n");
+    scanf("%d", &populacao);
+
+    printf("Digite a área (tamanho) da cidade. Ex: 1000000 (Equivalente a 1milhão km²)\n");
+    scanf("%f", &area);
+
+    printf("Digite digite qual o PIB da cidade:\n");
+    scanf("%f", &pib);
+    
+    printf("Quantos pontos turísticos a cidade possui?:\n");
+    scanf("%d", &ptr);
+
+    printf("Estado: %s\n", &estado);
+    printf("Código: %s\n", &codigo);
+    printf("Nome da Cidade: %s\n", &cidade);
+    printf("População: %d\n", &populacao);
+    printf("Área: %f km²\n", &area);
+    printf("PIB: %f\n", &pib);
+    printf("Total pontos turísticos: %d\n", &ptr);
+
+
+
+    printf("⇉ Carta Cadastrada com Sucesso ⇇");
+
+
+
+
     // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
     // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
     
