@@ -1,18 +1,18 @@
 #include <stdio.h>
 
 int main() {
-
-    char estado;
+// Cadastro de Cartas
+    char estado[1];
     char codigo[4];
-    char cidade[20];
+    char cidade[10];
     int populacao;
     float area;
     float pib;
     int ptr; /*pontos turisticos*/
     
-    printf("𖨠 Bem Vindo ao Super Trunfo - Card City 𖨠\n\n ✢Insira as informações solicitadas.✢\n\n");
+    printf("𖨠 Bem Vindo ao Super Trunfo - Card City 𖨠\n\n ✢ Insira as informações solicitadas. ✢\n\n");
 
-    printf("Digite a Letra do Estado, de ( A a H ). Ex: D: ");
+    printf("Digite a Letra do Estado, de ( A a Z ): ");
     scanf("%s", &estado);
 
     printf("Digite o codigo da Cidade. Ex: D001: ");
@@ -24,7 +24,7 @@ int main() {
     printf("Digite o total de moradores na cidade: ");
     scanf("%d", &populacao);
 
-    printf("Digite a área (tamanho) da cidade. Ex: 1000000 (Equivalente a 1milhão km²): ");
+    printf("Digite a área (tamanho) da cidade. Ex: 1000 (km²): ");
     scanf("%f", &area);
 
     printf("Digite digite qual o PIB da cidade: ");
@@ -35,17 +35,16 @@ int main() {
 
     printf("✦✦Carta Cadastrada com Sucesso!!✦✦\n\n ┌┌Informações da Carta:┐┐ \n\n");
 
-    printf("Estado: %s \n", estado);
-    
-    printf("Código: %s \n", codigo);
-    printf("Nome da Cidade: %s \n", cidade);
+    printf("Estado: %s\n", estado);
+
+    printf("Código: %s\n", codigo);
+
+    printf("Nome da Cidade: %s\n", cidade);
+
     printf("População: %d \n", populacao);
-    printf("Área: %f km² \n", area);
-    printf("PIB: %f \n", pib);
+    printf("Área: %.0f km² \n", area);
+    printf("PIB: %.0f \n", pib);
     printf("Total pontos turísticos: %d \n", ptr);
-
-    printf("Carta Cadastrada com Sucesso\n");
-
 
     return 0;
 }
