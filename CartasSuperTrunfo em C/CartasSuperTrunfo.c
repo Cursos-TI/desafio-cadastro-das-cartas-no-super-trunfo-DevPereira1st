@@ -2,16 +2,18 @@
 
 int main() {
 // Cadastro de Cartas
-    char estado[1];
+    char estado;
     char codigo[4];
-    char cidade[10];
+    char idade[10];
     int populacao;
     float area;
     float pib;
     int ptr; /*pontos turisticos*/
     
     printf("𖨠 Bem Vindo ao Super Trunfo - Card City 𖨠\n\n ✢ Insira as informações solicitadas. ✢\n\n");
-    printf("olá");
+
+    printf("Selecione uma letra de A a H:");
+    scanf("%s", &estado);
 
     printf("Digite o codigo da Cidade. Ex: D001: ");
     scanf("%s", &codigo);
@@ -33,13 +35,12 @@ int main() {
 
     printf("✦✦Carta Cadastrada com Sucesso!!✦✦\n\n ┌┌Informações da Carta:┐┐ \n\n");
 
-    printf("Código: %s\n", codigo);
-
-    printf("Nome da Cidade: %s\n", cidade);
-
+    printf("Código do Estado: %s \n", estado);
+    printf("Código: %s \n", codigo);
+    printf("Nome da Cidade: %s \n", cidade);
     printf("População: %d \n", populacao);
-    printf("Área: %.0f km² \n", area);
-    printf("PIB: %.0f \n", pib);
+    printf("Área: %.1f km² \n", area);
+    printf("PIB: %.1f \n", pib);
     printf("Total pontos turísticos: %d \n", ptr);
 
     return 0;
