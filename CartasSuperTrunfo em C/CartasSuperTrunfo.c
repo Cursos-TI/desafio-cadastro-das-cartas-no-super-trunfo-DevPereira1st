@@ -2,7 +2,7 @@
 
 int main() {
 
-    char estado[1], estado2[1];
+    char estado[2], estado2[2];
     char codigo[50], codigo2[50];
     char cidade[50], cidade2[50];
     int populacao, populacao2;
@@ -16,25 +16,25 @@ int main() {
     printf("➢ Cadastre a primeira carta:\n\n");
 
     printf("↠ Selecione uma letra para a carta: ");
-    scanf("%*s",&estado);
+    scanf("%s",estado);
 
     printf("↠ Digite o codigo da Cidade: ");
-    scanf("%*s",&codigo);
+    scanf("%s",codigo);
 
     printf("↠ Digite o nome da Cidade: ");
-    scanf("%*s",&cidade);
+    scanf("%s",cidade);
 
     printf("↠ Digite o total de moradores na cidade: ");
-    scanf("%d",&populacao);
+    scanf("%d", &populacao);
 
     printf("↠ Digite a área (tamanho) da cidade: ");
-    scanf("%f",&area);
+    scanf("%f", &area);
 
     printf("↠ Digite digite qual o PIB da cidade: ");
-    scanf("%f",&pib);
+    scanf("%f", &pib);
     
     printf("↠ Quantos pontos turísticos a cidade possui?: ");
-    scanf("%d",&ptr);
+    scanf("%d", &ptr);
 
     printf("✓ Carta Nº1 Cadastrada!\n\n");
 
@@ -43,25 +43,25 @@ int main() {
     printf("➢ Cadastre a segunda carta:\n\n");
 
     printf("↠ Selecione uma letra para a carta: ");
-    scanf("%s%*s",&estado2);
+    scanf("%s",estado2);
 
     printf("↠ Digite o codigo da Cidade: ");
-    scanf("%s%*s",&codigo2);
+    scanf("%s",codigo2);
 
     printf("↠ Digite o nome da Cidade: ");
-    scanf("%s%*s",&cidade2);
+    scanf("%s",cidade2);
 
     printf("↠ Digite o total de moradores na cidade: ");
-    scanf("%d",&populacao2);
+    scanf("%d", &populacao2);
 
     printf("↠ Digite a área (tamanho) da cidade: ");
-    scanf("%f",&area2);
+    scanf("%f", &area2);
 
     printf("↠ Digite digite qual o PIB da cidade: ");
-    scanf("%f",&pib2);
+    scanf("%f", &pib2);
     
     printf("↠ Quantos pontos turísticos a cidade possui?: ");
-    scanf("%d",&ptr2);
+    scanf("%d", &ptr2);
 
     printf("✓ Carta Nº2 Cadastrada!\n\n");
 
