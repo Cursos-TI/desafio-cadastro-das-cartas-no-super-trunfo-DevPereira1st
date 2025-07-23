@@ -1,41 +1,76 @@
 #include <stdio.h>
 
 int main() {
-// Cadastro de Cartas
-    char estado[50];
-    char codigo[50];
-    char cidade[50];
-    int populacao;
-    float area;
-    float pib;
-    int ptr; /*pontos turisticos*/
+
+    char estado[1], estado2[1];
+    char codigo[50], codigo2[50];
+    char cidade[50], cidade2[50];
+    int populacao, populacao2;
+    float area, area2;
+    float pib, pib2; 
+    int ptr, ptr2; /*pontos turisticos*/
     
     printf("𖨠 Bem Vindo ao Super Trunfo - Card City 𖨠\n\n ✢ Insira as informações solicitadas. ✢\n\n");
 
-    printf("Selecione uma letra de A a H:");
-    scanf("%s", &estado);
+    // Cadastro de Carta Nº1
+    printf("➢ Cadastre a primeira carta:\n\n");
 
-    printf("Digite o codigo da Cidade: ");
-    scanf("%s", &codigo);
+    printf("↠ Selecione uma letra para a carta: ");
+    scanf("%*s",&estado);
 
-    printf("Digite o nome da Cidade: ");
-    scanf("%s", &cidade);
+    printf("↠ Digite o codigo da Cidade: ");
+    scanf("%*s",&codigo);
 
-    printf("Digite o total de moradores na cidade: ");
-    scanf("%d", &populacao);
+    printf("↠ Digite o nome da Cidade: ");
+    scanf("%*s",&cidade);
 
-    printf("Digite a área (tamanho) da cidade: ");
-    scanf("%f", &area);
+    printf("↠ Digite o total de moradores na cidade: ");
+    scanf("%d",&populacao);
 
-    printf("Digite digite qual o PIB da cidade: ");
-    scanf("%f", &pib);
+    printf("↠ Digite a área (tamanho) da cidade: ");
+    scanf("%f",&area);
+
+    printf("↠ Digite digite qual o PIB da cidade: ");
+    scanf("%f",&pib);
     
-    printf("Quantos pontos turísticos a cidade possui?: ");
-    scanf("%d", &ptr);
+    printf("↠ Quantos pontos turísticos a cidade possui?: ");
+    scanf("%d",&ptr);
 
-    // Chat Log da Carta
+    printf("✓ Carta Nº1 Cadastrada!\n\n");
 
-    printf("✦✦Carta Cadastrada com Sucesso!!✦✦\n\n ┌┌Informações da Carta:┐┐ \n\n");
+    //Cadastro da Segunda Carta
+
+    printf("➢ Cadastre a segunda carta:\n\n");
+
+    printf("↠ Selecione uma letra para a carta: ");
+    scanf("%s%*s",&estado2);
+
+    printf("↠ Digite o codigo da Cidade: ");
+    scanf("%s%*s",&codigo2);
+
+    printf("↠ Digite o nome da Cidade: ");
+    scanf("%s%*s",&cidade2);
+
+    printf("↠ Digite o total de moradores na cidade: ");
+    scanf("%d",&populacao2);
+
+    printf("↠ Digite a área (tamanho) da cidade: ");
+    scanf("%f",&area2);
+
+    printf("↠ Digite digite qual o PIB da cidade: ");
+    scanf("%f",&pib2);
+    
+    printf("↠ Quantos pontos turísticos a cidade possui?: ");
+    scanf("%d",&ptr2);
+
+    printf("✓ Carta Nº2 Cadastrada!\n\n");
+
+
+    // Chat Log da Carta1
+
+    printf("✦✦ Cartas Cadastradas com Sucesso!! ✦✦\n\n");
+
+    printf("┌┌Informações da Carta Nº1:┐┐\n\n");
 
     printf("Letra do estado: %s\n",estado);
     printf("Código: %s\n",codigo);
@@ -43,7 +78,19 @@ int main() {
     printf("População: %d \n",populacao);
     printf("Área: %.1f km² \n",area);
     printf("PIB: %.1f \n",pib);
-    printf("Total pontos turísticos: %d \n",ptr);
+    printf("Total pontos turísticos: %d\n\n",ptr);
+
+    // Chat log da Carta 2
+
+    printf("┌┌Informações da Carta Nº2:┐┐\n\n");
+
+    printf("Letra do estado: %s\n",estado2);
+    printf("Código: %s\n",codigo2);
+    printf("Nome da Cidade: %s\n",cidade2);
+    printf("População: %d \n",populacao2);
+    printf("Área: %.1f km² \n",area2);
+    printf("PIB: %.1f \n",pib2);
+    printf("Total pontos turísticos: %d\n",ptr2);
 
     return 0;
 }
