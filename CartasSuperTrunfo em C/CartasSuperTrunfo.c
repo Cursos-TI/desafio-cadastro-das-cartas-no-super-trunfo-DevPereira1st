@@ -9,8 +9,6 @@ int main() {
     float area, area2;
     float pib, pib2; 
     int ptr, ptr2; /*pontos turisticos*/
-
-    float media, media2, media3, media4;
     
     printf("𖨠 Bem Vindo ao Super Trunfo - Card City 𖨠\n\n ✢ Insira as informações solicitadas. ✢\n\n");
 
@@ -34,8 +32,10 @@ int main() {
 
     printf("✓ Carta Nº1 Cadastrada!\n\n");
 
+    float media, media3;
+
     media = (float) (populacao + area) / 2;
-    media2 = (float) (pib + populacao) / 2;
+    media3 = (float) (pib + populacao) / 2;
 
     //Cadastro da Segunda Carta
 
@@ -58,7 +58,9 @@ int main() {
 
     printf("✓ Carta Nº2 Cadastrada!\n\n");
 
-    media3 = (float) (populacao2 + area2) / 2;
+    float media2, media4;
+
+    media2 = (float) (populacao2 + area2) / 2;
     media4 = (float) (pib2 + populacao2) / 2;
 
     // Chat Log da Carta1
@@ -75,7 +77,7 @@ int main() {
     printf("PIB: %.1f \n",pib);
     printf("Total pontos turísticos: %d\n",ptr);
     printf("Densidade Populacional: %.2f hab/km²\n", media);
-    printf("PIB Per Capita: %.2f \n\n", media3);
+    printf("PIB Per Capita: %.2f reais\n\n", media3);
 
     // Chat log da Carta 2
 
@@ -89,7 +91,7 @@ int main() {
     printf("PIB: %.1f \n",pib2);
     printf("Total pontos turísticos: %d\n",ptr2);
     printf("Densidade Populacional: %.2f hab/km²\n", media2);
-    printf("PIB Per Capita: %.2f \n\n", media4);
+    printf("PIB Per Capita: %.2f reais \n\n", media4);
 
     return 0;
 }
