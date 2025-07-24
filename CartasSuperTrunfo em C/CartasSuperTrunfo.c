@@ -11,11 +11,6 @@ int main() {
     int ptr, ptr2; /*pontos turisticos*/
 
     float media, media2, media3, media4;
-
-    media = (float) (populacao + area) / 2;
-    media2 = (float) (pib + populacao) / 2;
-    media3 = (float) (populacao2 + area2) / 2;
-    media4 = (float) (pib2 + populacao2) / 2;
     
     printf("𖨠 Bem Vindo ao Super Trunfo - Card City 𖨠\n\n ✢ Insira as informações solicitadas. ✢\n\n");
 
@@ -39,6 +34,9 @@ int main() {
 
     printf("✓ Carta Nº1 Cadastrada!\n\n");
 
+    media = (float) (populacao + area) / 2;
+    media2 = (float) (pib + populacao) / 2;
+
     //Cadastro da Segunda Carta
 
     printf("➢ Cadastre a segunda carta:\n\n");
@@ -59,6 +57,9 @@ int main() {
     scanf("%d", &ptr2);
 
     printf("✓ Carta Nº2 Cadastrada!\n\n");
+
+    media3 = (float) (populacao2 + area2) / 2;
+    media4 = (float) (pib2 + populacao2) / 2;
 
     // Chat Log da Carta1
 
