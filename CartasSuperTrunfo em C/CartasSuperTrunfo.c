@@ -15,12 +15,12 @@ int main() {
     // Cadastro de Carta Nº1
     printf("➢ Cadastre a primeira carta:\n\n");
 
-    printf("↠ Selecione uma letra para a carta: ");
+    printf("↠ Selecione uma letra para a carta, (Ex. A):");
     scanf("%s",estado);
     printf("↠ Digite o codigo da Cidade: ");
     scanf("%s",codigo);
     printf("↠ Digite o nome da Cidade: ");
-    scanf("%s",cidade);
+    scanf(" %49[^\n]", cidade);
     printf("↠ Digite o total de moradores na cidade: ");
     scanf("%d", &populacao);
     printf("↠ Digite a área (tamanho) da cidade: ");
@@ -36,12 +36,12 @@ int main() {
 
     printf("➢ Cadastre a segunda carta:\n\n");
 
-    printf("↠ Selecione uma letra para a carta: ");
+    printf("↠ Selecione uma letra para a carta, (Ex. B): ");
     scanf("%s",estado2);
     printf("↠ Digite o codigo da Cidade: ");
     scanf("%s",codigo2);
     printf("↠ Digite o nome da Cidade: ");
-    scanf("%s",cidade2);
+    scanf(" %49[^\n]", cidade2);
     printf("↠ Digite o total de moradores na cidade: ");
     scanf("%d", &populacao2);
     printf("↠ Digite a área (tamanho) da cidade: ");
