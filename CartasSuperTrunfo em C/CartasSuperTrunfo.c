@@ -2,13 +2,13 @@
 
 int main() {
 
-    char estado[2], estado2[2];
-    char codigo[50], codigo2[50];
+    unsigned char estado[2], estado2[2];
+    unsigned char codigo[50], codigo2[50];
     char cidade[50], cidade2[50];
-    int populacao, populacao2;
+    unsigned int populacao, populacao2;
     float area, area2;
     float pib, pib2; 
-    int ptr, ptr2; /*pontos turisticos*/
+    unsigned int ptr, ptr2; /*pontos turisticos*/
     
     printf("𖨠 Bem Vindo ao Super Trunfo - Card City 𖨠\n\n ✢ Insira as informações solicitadas. ✢\n\n");
 
