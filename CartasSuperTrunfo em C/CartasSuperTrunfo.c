@@ -88,10 +88,10 @@ int main() {
 
     printf("Valor de Densidade e PIB Per Capita: %.0f\n\n", desidadeepib);
 
-    unsigned int superpoder;
+    float superpoder;
     superpoder = populacao + area + pib + ptr + media3 + media6;
 
-    printf("Super Poder: %d\n\n", superpoder);
+    printf("Super Poder: %f\n\n", superpoder);
 
 
     // Chat log da Carta 2
@@ -113,10 +113,36 @@ int main() {
 
     printf("Valor de Densidade e PIB Per Capita: %.0f\n\n", desidadeepib2);
 
-    unsigned int superpoder2;
+    float superpoder2;
     superpoder2 = populacao2 + area2 + pib2 + ptr2 + media3 + media5;
 
-    printf("Super Poder: %d\n\n", superpoder2);
+    printf("Super Poder: %f\n\n", superpoder2);
+
+    // Comparação das Cartas - Resultado /  Exceto estado, código e nome
+    // Populacao, area, pib, ptr, media, media3, superpoder
+    // Populacao2, area2, pib2, ptr2, media2, media4, superpoder2
+
+    int rpopulacao, rarea, rpib, rptr, rmedia, rmedia3, rsuperpoder;
+
+    rpopulacao = populacao > populacao2;
+    rarea = area > area2;
+    rpib = pib > pib2;
+    rptr = ptr > ptr2;
+    rmedia = media < media2;
+    rmedia3 = media3 > media4;
+    rsuperpoder = superpoder > superpoder2;
+    
+
+    printf("✦✦ Comparação das Cartas ✦✦\n\n");
+    printf("✦✦ SE O RESULTADO FOR 1, CARTA 1 VENCE ✦✦\n ✦✦ SE O RESULTADO FOR 0, CARTA 2 VENCE ✦✦\n\n");
+
+    printf("Resultado: %d\n\n", rarea);
+    printf("Resultado: %d\n\n", rpopulacao);
+    printf("Resultado: %d\n\n", rpib);
+    printf("Resultado: %d\n\n", rptr);
+    printf("Resultado: %d\n\n", rmedia);
+    printf("Resultado: %d\n\n", rmedia3);
+    printf("Resultado: %d\n\n", rsuperpoder);
 
     return 0;
 }
