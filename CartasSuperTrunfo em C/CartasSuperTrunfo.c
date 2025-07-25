@@ -15,7 +15,7 @@ int main() {
     // Cadastro de Carta Nº1
     printf("➢ Cadastre a primeira carta:\n\n");
 
-    printf("↠ Selecione uma letra para a carta, (Ex. A):");
+    printf("↠ Selecione uma letra para a carta, (Ex. A): ");
     scanf("%s",estado);
     printf("↠ Digite o codigo da Cidade: ");
     scanf("%s",codigo);
@@ -34,8 +34,9 @@ int main() {
 
     float media, media3;
 
-    media = (float) (populacao + area) / 2;
-    media3 = (float) (pib + populacao) / 2;
+    media = (float) (populacao + area) / 2; /*Densidade populacional*/
+    media3 = (float) (pib + populacao) / 2; /*PIB Per Capita*/
+
 
     //Cadastro da Segunda Carta
 
@@ -60,8 +61,9 @@ int main() {
 
     float media2, media4;
 
-    media2 = (float) (populacao2 + area2) / 2;
-    media4 = (float) (pib2 + populacao2) / 2;
+    media2 = (float) (populacao2 + area2) / 2; /*Densidade populacional*/
+    media4 = (float) (pib2 + populacao2) / 2; /*PIB Per Capita*/
+
 
     // Chat Log da Carta1
 
@@ -79,6 +81,17 @@ int main() {
     printf("Densidade Populacional: %.2f hab/km²\n", media);
     printf("PIB Per Capita: %.2f reais\n\n", media3);
 
+    float desidadeepib; /*Puxar Densidade e PIB Per Capita*/
+    desidadeepib = (float) (media + media3);
+
+    printf("Valor de Densidade e PIB Per Capita: %.0f\n\n", desidadeepib);
+
+    unsigned int superpoder;
+    superpoder = populacao + area + pib + ptr + media3;
+
+    printf("Super Poder: %d \n\n", populacao + area + pib + ptr + media3);
+
+
     // Chat log da Carta 2
 
     printf("┌┌Informações da Carta Nº2:┐┐\n\n");
@@ -92,6 +105,16 @@ int main() {
     printf("Total pontos turísticos: %d\n",ptr2);
     printf("Densidade Populacional: %.2f hab/km²\n", media2);
     printf("PIB Per Capita: %.2f reais \n\n", media4);
+
+    float desidadeepib2; /*Puxar Densidade e PIB Per Capita 2*/
+    desidadeepib2 = (float) (media2 + media4);
+
+    printf("Valor de Densidade e PIB Per Capita: %.0f\n\n", desidadeepib2);
+
+    unsigned int superpoder2;
+    superpoder2 = populacao + area + pib + ptr + media3;
+
+    printf("Super Poder: %d\n\n", populacao + area + pib + ptr + media4);
 
     return 0;
 }
