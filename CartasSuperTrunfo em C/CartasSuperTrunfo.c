@@ -32,10 +32,11 @@ int main() {
 
     printf("✓ Carta Nº1 Cadastrada!\n\n");
 
-    float media, media3;
+    float media, media3, media6;
 
-    media = (float) (populacao + area) / 2; /*Densidade populacional*/
-    media3 = (float) (pib + populacao) / 2; /*PIB Per Capita*/
+    media = (float) (populacao / area); /*Densidade populacional*/
+    media3 = (float) (pib / populacao); /*PIB Per Capita*/
+    media6 = (float) (area / populacao); /*Inverso Densidade populacional*/
 
 
     //Cadastro da Segunda Carta
@@ -59,10 +60,11 @@ int main() {
 
     printf("✓ Carta Nº2 Cadastrada!\n\n");
 
-    float media2, media4;
+    float media2, media4, media5;
 
-    media2 = (float) (populacao2 + area2) / 2; /*Densidade populacional*/
-    media4 = (float) (pib2 + populacao2) / 2; /*PIB Per Capita*/
+    media2 = (float) (populacao2 / area2); /*Densidade populacional*/
+    media4 = (float) (pib2 / populacao2); /*PIB Per Capita*/
+    media5 = (float) (area2 / populacao2); /*Inverso Densidade populacional*/
 
 
     // Chat Log da Carta1
@@ -87,7 +89,7 @@ int main() {
     printf("Valor de Densidade e PIB Per Capita: %.0f\n\n", desidadeepib);
 
     unsigned int superpoder;
-    superpoder = populacao + area + pib + ptr + media3;
+    superpoder = populacao + area + pib + ptr + media3 + media6;
 
     printf("Super Poder: %d\n\n", superpoder);
 
@@ -112,7 +114,7 @@ int main() {
     printf("Valor de Densidade e PIB Per Capita: %.0f\n\n", desidadeepib2);
 
     unsigned int superpoder2;
-    superpoder2 = populacao2 + area2 + pib2 + ptr2 + media3;
+    superpoder2 = populacao2 + area2 + pib2 + ptr2 + media3 + media5;
 
     printf("Super Poder: %d\n\n", superpoder2);
 
