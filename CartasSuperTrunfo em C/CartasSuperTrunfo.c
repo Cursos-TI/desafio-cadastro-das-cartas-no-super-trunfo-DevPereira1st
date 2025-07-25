@@ -133,16 +133,29 @@ int main() {
     rsuperpoder = superpoder > superpoder2;
     
 
-    printf("✦✦ Comparação das Cartas ✦✦\n\n");
-    printf("✦✦ SE O RESULTADO FOR 1, CARTA 1 VENCE ✦✦\n ✦✦ SE O RESULTADO FOR 0, CARTA 2 VENCE ✦✦\n\n");
+    printf("✦✦ COMPARAÇÃO DE CARTAS ✦✦\n\n");
+    printf("Se o resultado for 1, Carta 1 vence! ✦✦\n ✦✦ Se o resultado for 0, a carta 2 vence!\n\n");
 
-    printf("Resultado: %d\n\n", rarea);
-    printf("Resultado: %d\n\n", rpopulacao);
-    printf("Resultado: %d\n\n", rpib);
-    printf("Resultado: %d\n\n", rptr);
-    printf("Resultado: %d\n\n", rmedia);
-    printf("Resultado: %d\n\n", rmedia3);
-    printf("Resultado: %d\n\n", rsuperpoder);
+    printf("Resultado área: %d\n\n", rarea);
+    printf("Resultado população: %d\n\n", rpopulacao);
+    printf("Resultado PIB: %d\n\n", rpib);
+    printf("Resultado Pontos Turísticos: %d\n\n", rptr);
+    printf("Resultad Densidade Populacional: %d\n\n", rmedia);
+    printf("Resultado PIB per Capita: %d\n\n", rmedia3);
+    printf("Resultado Super Poder: %d\n\n", rsuperpoder);
+
+    // Vencedora
+
+    printf("Comparação de cartas (Atributo: Densidade Populacional):\n\n");
+
+    printf("Carta Nº1: %s: %f\n", cidade, media);
+    printf("Carta Nº2: %s: %f\n\n", cidade2, media2);
+
+    if (media < media2 ) { 
+        printf("Carta 1: %s, é a Vencedora! ✔\n\n", cidade);
+    } else {
+        printf("Carta 2: %s, é a Vencedora! ✔\n\n", cidade2);
+    }
 
     return 0;
 }
