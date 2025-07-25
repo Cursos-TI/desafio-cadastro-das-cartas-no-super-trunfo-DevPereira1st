@@ -89,7 +89,7 @@ int main() {
     unsigned int superpoder;
     superpoder = populacao + area + pib + ptr + media3;
 
-    printf("Super Poder: %d \n\n", populacao + area + pib + ptr + media3);
+    printf("Super Poder: %d\n\n", superpoder);
 
 
     // Chat log da Carta 2
@@ -112,9 +112,9 @@ int main() {
     printf("Valor de Densidade e PIB Per Capita: %.0f\n\n", desidadeepib2);
 
     unsigned int superpoder2;
-    superpoder2 = populacao + area + pib + ptr + media3;
+    superpoder2 = populacao2 + area2 + pib2 + ptr2 + media3;
 
-    printf("Super Poder: %d\n\n", populacao + area + pib + ptr + media4);
+    printf("Super Poder: %d\n\n", superpoder2);
 
     return 0;
 }
