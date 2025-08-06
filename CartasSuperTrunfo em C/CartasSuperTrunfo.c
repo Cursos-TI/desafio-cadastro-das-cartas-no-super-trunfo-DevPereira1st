@@ -150,7 +150,9 @@ int main() {
 // Primeira carta
     printf("✦✦ Vamos Comparar Dois Atributos ✦✦\n\n");
 
-    printf("***Escolha: ***\n");
+     printf("✦ Escolha dois atributos para a Carta 1 ✦\n\n");
+
+    printf("***Escolha: ***\n\n");
     printf("1 - População\n");
     printf("2 - Área\n");
     printf("3 - PIB\n");
@@ -173,7 +175,9 @@ int main() {
 
    
 // Segunda carta
-    printf("***Escolha: ***\n");
+    printf("\n\n✦✦ Agora vamos comparar com a Carta 2 ✦✦\n\n");
+
+    printf("***Escolha: ***\n\n");
     printf("1 - População\n");
     printf("2 - Área\n");
     printf("3 - PIB\n");
@@ -193,26 +197,27 @@ int main() {
     resultado2 = comparar3 + comparar4;
 
     int rresultado;
-    int acao;
+    char acao;
 
     rresultado = resultado > resultado2;
 
-    printf("***Escolha uma ação: ***\n");
+    printf("***Escolha uma ação: ***\n\n");
     printf("S - Start (Começa a Batalha)\n");
-    printf("E - Exit\n");
-    scanf("%d", &acao);
+    printf("E - Exit");
 
-    if (acao == 'E' || acao == 'e') {
-        printf("Saindo do jogo...\n");
-        return 0; // Encerrar o programa se a ação for 'E'
-    } else if (acao == 'S' || acao == 's') {
-        
+    printf("\n\nDigite a ação desejada: ");
+    scanf("%s", &acao);
+
+    switch (acao){
+    case 'S':
+    case 's':
+    
         printf("Iniciando a batalha...\n");
 
         printf("Cidades em comparação: %s, %s\n", cidade, cidade2);
-        printf("Atributos escolhidos: %d e %d\n", comparar, comparar2);
+        printf("Atributos escolhidos: %d e %d\n\n", comparar, comparar2);
         printf("Valor de cada atribulto da Carta 1 %d, %d\n",  comparar, comparar2);
-        printf("Valor de cada atribulto da Carta 2 %d, %d\n",  comparar3, comparar4);
+        printf("Valor de cada atribulto da Carta 2 %d, %d\n\n",  comparar3, comparar4);
         printf("Resultado da carta 1: %d\n", resultado);
         printf("Resultado da carta 2: %d\n", resultado2);
 
@@ -223,11 +228,16 @@ int main() {
         } else {
             printf("As cartas são iguais! Nenhuma vence.\n");
         }
+        break;
 
-    } else {
+    case 'E':
+    case 'e':
+        printf("Saindo do jogo...\n");
+
+        break;
+    default:
         printf("Ação inválida! Por favor, escolha S para Start ou E para Exit.\n");
-        return 0; // Encerrar o programa se a ação for inválida
+        break;
     }
-
     return 0;
 }
