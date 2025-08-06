@@ -122,27 +122,27 @@ int main() {
     // Populacao, area, pib, ptr, media, media3, superpoder
     // Populacao2, area2, pib2, ptr2, media2, media4, superpoder2
 
-   int rpopulacao, rarea, rpib, rptr, rmedia, rmedia3, rsuperpoder;
+    // int rpopulacao, rarea, rpib, rptr, rmedia, rmedia3, rsuperpoder;
 
-    rpopulacao = populacao > populacao2;
-    rarea = area > area2;
-    rpib = pib > pib2;
-    rptr = ptr > ptr2;
-    rmedia = media < media2;
-    rmedia3 = media3 > media4;
-    rsuperpoder = superpoder > superpoder2;
+    // rpopulacao = populacao > populacao2;
+    // rarea = area > area2;
+    // rpib = pib > pib2;
+    // rptr = ptr > ptr2;
+    // rmedia = media < media2;
+    // rmedia3 = media3 > media4;
+    // rsuperpoder = superpoder > superpoder2;
     
 
-    printf("✦✦ COMPARAÇÃO DE CARTAS ✦✦\n\n");
-    printf("Se o resultado for 1, Carta 1 vence! ✦✦\n ✦✦ Se o resultado for 0, a carta 2 vence!\n\n");
+    // printf("✦✦ COMPARAÇÃO DE CARTAS ✦✦\n\n");
+    // printf("Se o resultado for 1, Carta 1 vence! ✦✦\n ✦✦ Se o resultado for 0, a carta 2 vence!\n\n");
 
-    printf("Resultado área: %d\n\n", rarea);
-    printf("Resultado população: %d\n\n", rpopulacao);
-    printf("Resultado PIB: %d\n\n", rpib);
-    printf("Resultado Pontos Turísticos: %d\n\n", rptr);
-    printf("Resultad Densidade Populacional: %d\n\n", rmedia);
-    printf("Resultado PIB per Capita: %d\n\n", rmedia3);
-    printf("Resultado Super Poder: %d\n\n", rsuperpoder);
+    // printf("Resultado área: %d\n\n", rarea);
+    // printf("Resultado população: %d\n\n", rpopulacao);
+    // printf("Resultado PIB: %d\n\n", rpib);
+    // printf("Resultado Pontos Turísticos: %d\n\n", rptr);
+    // printf("Resultad Densidade Populacional: %d\n\n", rmedia);
+    // printf("Resultado PIB per Capita: %d\n\n", rmedia3);
+    // printf("Resultado Super Poder: %d\n\n", rsuperpoder);
 
 
     int comparar, comparar2, comparar3, comparar4;;
@@ -202,6 +202,32 @@ int main() {
     printf("E - Exit\n");
     scanf("%d", &acao);
 
-    
+    if (acao == 'E' || acao == 'e') {
+        printf("Saindo do jogo...\n");
+        return 0; // Encerrar o programa se a ação for 'E'
+    } else if (acao == 'S' || acao == 's') {
+        
+        printf("Iniciando a batalha...\n");
+
+        printf("Cidades em comparação: %s, %s\n", cidade, cidade2);
+        printf("Atributos escolhidos: %d e %d\n", comparar, comparar2);
+        printf("Valor de cada atribulto da Carta 1 %d, %d\n",  comparar, comparar2);
+        printf("Valor de cada atribulto da Carta 2 %d, %d\n",  comparar3, comparar4);
+        printf("Resultado da carta 1: %d\n", resultado);
+        printf("Resultado da carta 2: %d\n", resultado2);
+
+        if (rresultado) {
+            printf("A Carta 1 vence! %d\n", rresultado);
+        } else if (!rresultado) {
+            printf("A Carta 2 vence! %d\n", rresultado);
+        } else {
+            printf("As cartas são iguais! Nenhuma vence.\n");
+        }
+
+    } else {
+        printf("Ação inválida! Por favor, escolha S para Start ou E para Exit.\n");
+        return 0; // Encerrar o programa se a ação for inválida
+    }
+
     return 0;
 }
