@@ -153,11 +153,11 @@ int main() {
      printf("✦ Escolha dois atributos para a Carta 1 ✦\n\n");
 
     printf("***Escolha: ***\n\n");
-    printf("1 - População\n");
-    printf("2 - Área\n");
-    printf("3 - PIB\n");
-    printf("4 - Pontos Turísticos\n");  
-    printf("5 - Densidade Demográfica\n\n");
+    printf("1 - População %d\n", populacao);
+    printf("2 - Área %f\n", area);
+    printf("3 - PIB %f\n", pib);
+    printf("4 - Pontos Turísticos %d\n", ptr);  
+    printf("5 - Densidade Demográfica %f\n\n", media6);
 
     printf("Digite o primeiro número do atributo que deseja comparar: \n");
     scanf("%d", &comparar);
@@ -178,11 +178,11 @@ int main() {
     printf("\n\n✦✦ Agora vamos comparar com a Carta 2 ✦✦\n\n");
 
     printf("***Escolha: ***\n\n");
-    printf("1 - População\n");
-    printf("2 - Área\n");
-    printf("3 - PIB\n");
-    printf("4 - Pontos Turísticos\n");  
-    printf("5 - Densidade Demográfica\n\n");
+    printf("1 - População %d\n", populacao2);
+    printf("2 - Área %f\n", area2);
+    printf("3 - PIB %f\n",  pib2);
+    printf("4 - Pontos Turísticos %d\n", ptr2);  
+    printf("5 - Densidade Demográfica %f\n\n", media5);
 
     printf("Digite o primeiro número do atributo que deseja comparar: \n");
     scanf("%d", &comparar3);
@@ -196,10 +196,9 @@ int main() {
 
     resultado2 = comparar3 + comparar4;
 
-    int rresultado;
+    
     char acao;
 
-    rresultado = resultado > resultado2;
 
     printf("***Escolha uma ação: ***\n\n");
     printf("S - Start (Começa a Batalha)\n");
@@ -216,15 +215,15 @@ int main() {
 
         printf("Cidades em comparação: %s, %s\n", cidade, cidade2);
         printf("Atributos escolhidos: %d e %d\n\n", comparar, comparar2);
-        printf("Valor de cada atribulto da Carta 1 %d, %d\n",  comparar, comparar2);
-        printf("Valor de cada atribulto da Carta 2 %d, %d\n\n",  comparar3, comparar4);
+        printf("Valor de cada atribulto da Carta 1 %d, %d\n",  resultado, resultado);
+        printf("Valor de cada atribulto da Carta 2 %d, %d\n\n", resultado2, resultado2);
         printf("Resultado da carta 1: %d\n", resultado);
         printf("Resultado da carta 2: %d\n", resultado2);
 
-        if (rresultado) {
-            printf("A Carta 1 vence! %d\n", rresultado);
-        } else if (!rresultado) {
-            printf("A Carta 2 vence! %d\n", rresultado);
+        if (resultado > resultado2) {
+            printf("A Carta 1 vence!\n");
+        } else if (resultado2 > resultado) {
+            printf("A Carta 2 vence!\n");
         } else {
             printf("As cartas são iguais! Nenhuma vence.\n");
         }
