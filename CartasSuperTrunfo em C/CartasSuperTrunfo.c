@@ -2,7 +2,7 @@
 
 int main() {
 
-    unsigned char estado[2], estado2[2];
+    unsigned char estado[2], estado2[2]; 
     unsigned char codigo[50], codigo2[50];
     char cidade[50], cidade2[50];
     unsigned int populacao, populacao2;
@@ -98,7 +98,7 @@ int main() {
 
     printf("┌┌Informações da Carta Nº2:┐┐\n\n");
 
-    printf("Letra do estado: %s\n",estado2);
+    printf("Letra do estado: %s\n",estado2); 
     printf("Código: %s\n",codigo2);
     printf("Nome da Cidade: %s\n",cidade2);
     printf("População: %d \n",populacao2);
@@ -117,26 +117,6 @@ int main() {
     superpoder2 = populacao2 + area2 + pib2 + ptr2 + media3 + media5;
 
     printf("Super Poder: %f\n\n", superpoder2);
-
-    // Comparação das Cartas - Resultado /  Exceto estado, código e nome
-    // Populacao, area, pib, ptr, media, media3, superpoder
-    // Populacao2, area2, pib2, ptr2, media2, media4, superpoder2
-
-    // int rpopulacao, rarea, rpib, rptr, rmedia, rmedia3, rsuperpoder;
-
-    // rpopulacao = populacao > populacao2;
-    // rarea = area > area2;
-    // rpib = pib > pib2;
-    // rptr = ptr > ptr2;
-    // rmedia = media < media2;
-    // rmedia3 = media3 > media4;
-    // rsuperpoder = superpoder > superpoder2;
-    
-
-    // printf("✦✦ COMPARAÇÃO DE CARTAS ✦✦\n\n");
-    // printf("Se o resultado for 1, Carta 1 vence! ✦✦\n ✦✦ Se o resultado for 0, a carta 2 vence!\n\n");
-
-    // printf("Resultado área: %d\n\n", rarea);
     // printf("Resultado população: %d\n\n", rpopulacao);
     // printf("Resultado PIB: %d\n\n", rpib);
     // printf("Resultado Pontos Turísticos: %d\n\n", rptr);
@@ -168,17 +148,17 @@ int main() {
         printf("Você escolheu comparar o mesmo atributo! Por favor, escolha atributos diferentes.\n");
         return 0; // Encerrar o programa se os atributos forem iguais
     } else {
-        switch (comparar)
+        switch (comparar) // Verifica a opção escolhida pelo usuário e troca pelo valor da opção
      {
         case 1:
-          comparar = populacao;
+          comparar = populacao; 
           break;
 
         case 2:
-          comparar = area;
+          comparar = area; 
           break;
         case 3:
-          comparar = pib;
+          comparar = pib; 
           break;
 
         case 4:
@@ -186,28 +166,28 @@ int main() {
           break;
 
         case 5:
-          comparar = media6;
+          comparar = media6; 
           break;
     
      default:
-        printf("Opção inválida! Por favor, escolha um número entre 1 e 5.\n");
+        printf("Opção inválida! Por favor, escolha um número entre 1 e 5.\n"); /* Quebra a ação, caso opção seja inválida.*/
         return 0; // Encerrar o programa se a opção for inválida
         break;
-    } switch (comparar2)
+    } switch (comparar2) // Verifica a opção escolhida pelo usuário e troca pelo valor da opção
     {
         case 1:
-          comparar2 = populacao;
+          comparar2 = populacao; 
           break;
 
         case 2:
-          comparar2 = area;
+          comparar2 = area; 
           break;
         case 3:
           comparar2 = pib;
           break;
 
         case 4:
-          comparar2 = ptr;
+          comparar2 = ptr;  
           break;
 
         case 5:
@@ -215,7 +195,7 @@ int main() {
           break;
     
      default:
-        printf("Opção inválida! Por favor, escolha um número entre 1 e 5.\n");
+        printf("Opção inválida! Por favor, escolha um número entre 1 e 5.\n"); /* Quebra a ação, caso opção seja inválida.*/
         return 0; // Encerrar o programa se a opção for inválida
         break;
     }
@@ -245,21 +225,21 @@ int main() {
         printf("Você escolheu comparar o mesmo atributo! Por favor, escolha atributos diferentes.\n");
         return 0; // Encerrar o programa se os atributos forem iguais
     } else {
-        switch (comparar3) 
+        switch (comparar3) // Verifica a opção escolhida pelo usuário e troca pelo valor da opção
      {
         case 1:
-          comparar3 = populacao2;
+          comparar3 = populacao2; 
           break;
 
         case 2:
-          comparar3 = area2;
+          comparar3 = area2; 
           break;
         case 3:
           comparar3 = pib2;
           break;
 
         case 4:
-          comparar3 = ptr2;
+          comparar3 = ptr2; 
           break;
 
         case 5:
@@ -267,79 +247,79 @@ int main() {
           break;
     
      default:
-        printf("Opção inválida! Por favor, escolha um número entre 1 e 5.\n");
+        printf("Opção inválida! Por favor, escolha um número entre 1 e 5.\n"); /* Quebra a ação, caso opção seja inválida.*/
         return 0; // Encerrar o programa se a opção for inválida
         break;
-    } switch (comparar4)
+    } switch (comparar4) // Verifica a opção escolhida pelo usuário e troca pelo valor da opção
     {
         case 1:
           comparar4 = populacao2;
           break;
 
         case 2:
-          comparar4 = area2;
+          comparar4 = area2; 
           break;
         case 3:
-          comparar4= pib2;
+          comparar4= pib2; 
           break;
 
         case 4:
-          comparar4= ptr2;
+          comparar4= ptr2; 
           break;
 
         case 5:
-          comparar4= media5;
+          comparar4= media5; 
           break;
     
      default:
-        printf("Opção inválida! Por favor, escolha um número entre 1 e 5.\n");
+        printf("Opção inválida! Por favor, escolha um número entre 1 e 5.\n"); /* Quebra a ação, caso opção seja inválida.*/
         return 0; // Encerrar o programa se a opção for inválida
         break;
     }
     } 
 
-    resultado2 = comparar3 + comparar4;
+    resultado2 = comparar3 + comparar4; // Soma dos atributos escolhidos da carta 2
 
     
-    char acao;
+    char acao; // Variável para armazenar a ação do usuário
 
 
-    printf("***Escolha uma ação: ***\n\n");
-    printf("S - Start (Começa a Batalha)\n");
-    printf("E - Exit");
+    printf("►►  Escolha uma ação: ◄◄\n\n"); /*Menu de Interação*/
+    printf("S - Start (Começa a Batalha)\n"); /*Começa a batalha */
+    printf("E - Exit"); /*Encerra o jogo*/
 
-    printf("\n\nDigite a ação desejada: ");
-    scanf("%s", &acao);
+    printf("\n\nDigite a ação desejada: "); 
+    scanf("%s", &acao); // Lê a ação do usuário
 
-    switch (acao){
-    case 'S':
+    switch (acao){ // Verifica a ação escolhida pelo usuário
+    case 'S': // Inicia a batalha
     case 's':
     
-        printf("Iniciando a batalha...\n");
+        printf("➱➱ Iniciando a batalha!\n\n");
 
-        // printf("Cidades em comparação: %s, %s\n", cidade, cidade2);
-        // printf("Atributos escolhidos: %d e %d\n\n", comparar, comparar2);
-        // printf("Valor de cada atribulto da Carta 1 %d, %d\n",  resultado, resultado);
-        // printf("Valor de cada atribulto da Carta 2 %d, %d\n\n", resultado2, resultado2);
-        printf("Resultado da carta 1: %d\n", resultado);
-        printf("Resultado da carta 2: %d\n", resultado2);
+        printf("Cidade %s conta %s.\n", cidade, cidade2); //Mostra o nome das cidades das cartas
+        
+        printf("Valor de cada atribulto da Carta 1 %d, %d\n",  comparar, comparar2); //Mostra os valores dos atributos escolhidos da carta 1
+        printf("Valor de cada atribulto da Carta 2 %d, %d\n\n", comparar3, comparar4); //Mostra os valores dos atributos escolhidos da carta 2
+        printf("Resultado da carta 1: %d\n", resultado); //Mostra o resultado da carta 1
+        printf("Resultado da carta 2: %d\n", resultado2); //Mostra o resultado da carta 2
 
         if (resultado > resultado2) {
-            printf("A Carta 1 vence!\n");
+            printf("A Carta 1 vence!\n"); /*Se o valor da carta 1 for maior, ela vence*/
         } else if (resultado2 > resultado) {
-            printf("A Carta 2 vence!\n");
+            printf("A Carta 2 vence!\n"); /*Se o valor da carta 2 for maior, ela vence*/
         } else {
-            printf("As cartas são iguais! Nenhuma vence.\n");
+            printf("As cartas são iguais! Nenhuma vence.\n"); /*Se não, da empate*/
         }
         break;
 
-    case 'E':
+    case 'E': // Encerra o jogo
     case 'e':
         printf("Saindo do jogo...\n");
 
         break;
     default:
-        printf("Ação inválida! Por favor, escolha S para Start ou E para Exit.\n");
+        printf("Ação inválida! Por favor, escolha S para Start ou E para Exit.\n");  /* Quebra a ação, caso opção seja inválida.*/
         break;
     }
     return 0;
