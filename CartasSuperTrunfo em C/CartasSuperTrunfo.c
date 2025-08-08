@@ -169,6 +169,16 @@ int main() {
         return 0; // Encerrar o programa se os atributos forem iguais
     }
 
+    switch (comparar)
+    {
+    case 1:
+        
+        break;
+    
+    default:
+        break;
+    }
+
 
 
     resultado = comparar + comparar2;
