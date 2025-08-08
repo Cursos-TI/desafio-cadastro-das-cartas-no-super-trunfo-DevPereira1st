@@ -154,8 +154,8 @@ int main() {
 
     printf("***Escolha: ***\n\n");
     printf("1 - População %d\n", populacao);
-    printf("2 - Área %f\n", area);
-    printf("3 - PIB %f\n", pib);
+    printf("2 - Área %.0f\n", area); /*.0 (Não mostra as casas decimais)*/
+    printf("3 - PIB %.0f\n", pib); /*  ^^ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
     printf("4 - Pontos Turísticos %d\n", ptr);  
     printf("5 - Densidade Demográfica %f\n\n", media6);
 
@@ -167,17 +167,59 @@ int main() {
     if (comparar == comparar2) {
         printf("Você escolheu comparar o mesmo atributo! Por favor, escolha atributos diferentes.\n");
         return 0; // Encerrar o programa se os atributos forem iguais
-    }
+    } else {
+        switch (comparar)
+     {
+        case 1:
+          comparar = populacao;
+          break;
 
-    switch (comparar)
-    {
-    case 1:
-        
-        break;
+        case 2:
+          comparar = area;
+          break;
+        case 3:
+          comparar = pib;
+          break;
+
+        case 4:
+          comparar = ptr;
+          break;
+
+        case 5:
+          comparar = media6;
+          break;
     
-    default:
+     default:
+        printf("Opção inválida! Por favor, escolha um número entre 1 e 5.\n");
+        return 0; // Encerrar o programa se a opção for inválida
+        break;
+    } switch (comparar2)
+    {
+        case 1:
+          comparar2 = populacao;
+          break;
+
+        case 2:
+          comparar2 = area;
+          break;
+        case 3:
+          comparar2 = pib;
+          break;
+
+        case 4:
+          comparar2 = ptr;
+          break;
+
+        case 5:
+          comparar2 = media6;
+          break;
+    
+     default:
+        printf("Opção inválida! Por favor, escolha um número entre 1 e 5.\n");
+        return 0; // Encerrar o programa se a opção for inválida
         break;
     }
+    } 
 
 
 
@@ -189,8 +231,8 @@ int main() {
 
     printf("***Escolha: ***\n\n");
     printf("1 - População %d\n", populacao2);
-    printf("2 - Área %f\n", area2);
-    printf("3 - PIB %f\n",  pib2);
+    printf("2 - Área %.0f\n", area2); /*.0 (Não mostra as casas decimais)*/
+    printf("3 - PIB %.0f\n", pib2); /*  ^^ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
     printf("4 - Pontos Turísticos %d\n", ptr2);  
     printf("5 - Densidade Demográfica %f\n\n", media5);
 
@@ -199,10 +241,62 @@ int main() {
     printf("Digite o segundo número do atributo que deseja comparar: ");
     scanf("%d", &comparar4);
 
-    if (comparar == comparar2) {
+    if (comparar3 == comparar4) {
         printf("Você escolheu comparar o mesmo atributo! Por favor, escolha atributos diferentes.\n");
         return 0; // Encerrar o programa se os atributos forem iguais
+    } else {
+        switch (comparar3) 
+     {
+        case 1:
+          comparar3 = populacao2;
+          break;
+
+        case 2:
+          comparar3 = area2;
+          break;
+        case 3:
+          comparar3 = pib2;
+          break;
+
+        case 4:
+          comparar3 = ptr2;
+          break;
+
+        case 5:
+          comparar3 = media5;
+          break;
+    
+     default:
+        printf("Opção inválida! Por favor, escolha um número entre 1 e 5.\n");
+        return 0; // Encerrar o programa se a opção for inválida
+        break;
+    } switch (comparar4)
+    {
+        case 1:
+          comparar4 = populacao2;
+          break;
+
+        case 2:
+          comparar4 = area2;
+          break;
+        case 3:
+          comparar4= pib2;
+          break;
+
+        case 4:
+          comparar4= ptr2;
+          break;
+
+        case 5:
+          comparar4= media5;
+          break;
+    
+     default:
+        printf("Opção inválida! Por favor, escolha um número entre 1 e 5.\n");
+        return 0; // Encerrar o programa se a opção for inválida
+        break;
     }
+    } 
 
     resultado2 = comparar3 + comparar4;
 
@@ -223,10 +317,10 @@ int main() {
     
         printf("Iniciando a batalha...\n");
 
-        printf("Cidades em comparação: %s, %s\n", cidade, cidade2);
-        printf("Atributos escolhidos: %d e %d\n\n", comparar, comparar2);
-        printf("Valor de cada atribulto da Carta 1 %d, %d\n",  resultado, resultado);
-        printf("Valor de cada atribulto da Carta 2 %d, %d\n\n", resultado2, resultado2);
+        // printf("Cidades em comparação: %s, %s\n", cidade, cidade2);
+        // printf("Atributos escolhidos: %d e %d\n\n", comparar, comparar2);
+        // printf("Valor de cada atribulto da Carta 1 %d, %d\n",  resultado, resultado);
+        // printf("Valor de cada atribulto da Carta 2 %d, %d\n\n", resultado2, resultado2);
         printf("Resultado da carta 1: %d\n", resultado);
         printf("Resultado da carta 2: %d\n", resultado2);
 
