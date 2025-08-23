@@ -17,16 +17,22 @@ int main() {
 
     printf("↠ Selecione uma letra para a carta, (Ex. A): ");
     scanf("%s",estado);
+
     printf("↠ Digite o codigo da Cidade: ");
     scanf("%s",codigo);
+
     printf("↠ Digite o nome da Cidade: ");
     scanf(" %49[^\n]", cidade);
+
     printf("↠ Digite o total de moradores na cidade: ");
     scanf("%d", &populacao);
+
     printf("↠ Digite a área (tamanho) da cidade: ");
     scanf("%f", &area);
+
     printf("↠ Digite digite qual o PIB da cidade: ");
     scanf("%f", &pib);
+
     printf("↠ Quantos pontos turísticos a cidade possui?: ");
     scanf("%d", &ptr);
 
@@ -45,16 +51,22 @@ int main() {
 
     printf("↠ Selecione uma letra para a carta, (Ex. B): ");
     scanf("%s",estado2);
+
     printf("↠ Digite o codigo da Cidade: ");
     scanf("%s",codigo2);
+
     printf("↠ Digite o nome da Cidade: ");
     scanf(" %49[^\n]", cidade2);
+
     printf("↠ Digite o total de moradores na cidade: ");
     scanf("%d", &populacao2);
+
     printf("↠ Digite a área (tamanho) da cidade: ");
     scanf("%f", &area2);
+
     printf("↠ Digite digite qual o PIB da cidade: ");
     scanf("%f", &pib2);
+    
     printf("↠ Quantos pontos turísticos a cidade possui?: ");
     scanf("%d", &ptr2);
 
